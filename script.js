@@ -1,7 +1,12 @@
 let num = 266219;
-let array = num.toString();
-const beta = array.split('');
+let convert = num.toString();
+const array = convert.split('');
 
-const alpha = beta.reduce((a, b) => a * b);
-console.log(alpha);
+const multiple = array.reduce((a, b) => a * b);
+
+const bigValue = multiple ** 3;
+
+let cutValue = bigValue.toString();
+
+console.log(cutValue.substring(0, 2));
 
